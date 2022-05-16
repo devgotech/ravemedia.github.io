@@ -1,21 +1,53 @@
 @import "../assets/bootstrap/css/bootstrap.min.css";
-@import "../assets/bootstrap/bootstrap-icons/_bootstrap-icons.scss";
+@import "../assets/bootstrap-icons/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
-body {
-    background-color: rgb(243, 236, 155);
-}
+
 
 body::before {
     display: block;
     content: '';
     height: 60px;
 }
-.sec-bg{
+
+body {
+    background-color: rgb(234, 232, 217);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sb {
+    position: absolute;
+    width: auto;
+    left: 45%;
+    background-color: rgb(225, 225, 225);
+    border-style: none;
+    padding-top: 10px;
+    top: 30px;
+}
+
+.social-link {
+    position: fixed;
+    width: auto;
+    background-color: rgb(245, 222, 90);
+    top: 50%;
+}
+
+.s-ul {
+    /* list-style: url('../assets/bootstrap-icons/plugin.svg'); */
+    list-style: none;
+}
+
+.bg-ft {
+    background-color: rgb(99, 97, 95);
+    
+}
+
+/* .sec-bg{
     position: absolute;
     width: auto;
     left: 20%;
     z-index: -1;
-}
+} */
 
 .bg-index{
     position: relative;
@@ -26,8 +58,23 @@ body::before {
     background-color: rgb(243, 211, 95);
 }
 
-@media (min-width: 768px) {
+.empty-div {
+    opacity: 0;
+    content: '';
+    height: 20px;
+}
+
+@media (max-width: 768px) {
     .news-input {
         width: 50%;
+    }
+    .sb {
+        left: 40%;
+    }
+}
+
+@media (max-width: 540px) {
+    .sb {
+        display: none;
     }
 }
